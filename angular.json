@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AFL"
+    }
+  },
+  "defaultProject": "AFL",
+  "cli": {
+    "analytics": "6d00dbd8-b681-4b0c-94af-d1a11ebffa06"
+  }
 }
