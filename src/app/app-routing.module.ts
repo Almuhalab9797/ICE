@@ -7,9 +7,10 @@ import { WhichTeamComponent } from './which-team/which-team.component';
 
 const routes: Routes = [
 
-  // {path: '**', component: AppComponent},
   {path: 'SelectTeam', component: SelectTeamComponent},
   {path: 'WhichTeam', component: WhichTeamComponent},
+  {path: 'app-which-team', component: WhichTeamComponent},
+
 ];
 
 @NgModule({
