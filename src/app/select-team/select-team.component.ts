@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import {Team} from '../team';
 
 import {DataService} from '../data.service';
+import {WhichTeamComponent} from '../which-team/which-team.component';
 
 @Component({
   selector: 'app-select-team',
@@ -12,10 +13,21 @@ import {DataService} from '../data.service';
 export class SelectTeamComponent implements OnInit {
 
   teams:Team[]; 
+  selectedTeam: Team;
+
+  //team: Team;
   constructor(private service: DataService) { }
 
   ngOnInit(): void {
     this.getTeams(); 
+  }
+
+
+  onSelect(team: Team): void{
+    console.log(team);
+    this.selectedTeam = team;
+
+    //WhichTeamComponent.onChoose(team);
   }
 
 
