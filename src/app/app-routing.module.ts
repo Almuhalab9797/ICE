@@ -10,7 +10,6 @@ const routes: Routes = [
   {path: 'SelectTeam', component: SelectTeamComponent},
   {path: 'WhichTeam', component: WhichTeamComponent},
   {path: 'app-which-team', component: WhichTeamComponent},
-
 ];
 
 @NgModule({
