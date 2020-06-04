@@ -9,11 +9,8 @@ const routes: Routes = [
 
   {path: 'SelectTeam', component: SelectTeamComponent},
   {path: 'WhichTeam', component: WhichTeamComponent},
-<<<<<<< HEAD
-=======
   {path: 'app-which-team', component: WhichTeamComponent},
 
->>>>>>> a9c3e769fe9ed65e5c81ec969f690d815ddeaf4d
 ];
 
 @NgModule({

@@ -58,5 +58,32 @@ export class DataService {
               item.id 
             ))) 
           );  
-        } 
+        }
+        
+        getTips(): Observable<Tip[]>{
+          return this.http.get('https://api.squiggle.com.au/?q=tips').pipe(
+            map((data: any) => data.tips.map((item: any) => new Tip(
+              item.gameid,
+              item.err,
+              item.bits,
+              item.tipteamid,
+              item.venue,
+              item.ateamid,
+              item.round,
+              item.sourceid,
+              item.tips,
+              item.date,
+              item.confidence,
+              item.source,
+              item.hconfiedence,
+              item.updated,
+              item.hteamid,
+              item.correct,
+              item.hteam,
+              item.margin,
+              item.year,
+              item.ateam,
+          )))
+          );
+        }
 }

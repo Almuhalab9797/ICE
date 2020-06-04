@@ -1,6 +1,4 @@
 export class Game {
-<<<<<<< HEAD
-=======
     constructor( 
         public complete: number, 
         public is_grand_final: number,  
@@ -25,5 +23,4 @@ export class Game {
         public date: string, 
         public id: number 
     ){} 
->>>>>>> a9c3e769fe9ed65e5c81ec969f690d815ddeaf4d
 }
