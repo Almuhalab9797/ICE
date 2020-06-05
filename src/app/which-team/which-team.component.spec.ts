@@ -1,4 +1,4 @@
-/*import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { WhichTeamComponent } from './which-team.component';
 
@@ -22,4 +22,4 @@ describe('WhichTeamComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-});*/
+});

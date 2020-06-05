@@ -1,13 +1,13 @@
-/*import { Component, OnInit, Input, SimpleChange, OnChanges } from '@angular/core';
+import { Component, OnInit, Input, SimpleChange, OnChanges } from '@angular/core';
 import { Team } from '../team';
 import {Game} from '../game';
 import { DataService } from '../data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-which-team',
   templateUrl: './which-team.component.html',
   styleUrls: ['./which-team.component.css']
-
 })
 
 export class WhichTeamComponent implements OnInit{
@@ -16,7 +16,7 @@ export class WhichTeamComponent implements OnInit{
   @Input() team: Team;
   teamSelected:Team;
   
-  constructor(private service: DataService) {}
+  constructor(private service: DataService, private router: Router) {}
 
   ngOnChange(changes: SimpleChange):void {
     if(changes['team']){
@@ -44,4 +44,4 @@ export class WhichTeamComponent implements OnInit{
       this.games = tempArr;
     }); 
   } 
-}*/
+}
