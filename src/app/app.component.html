@@ -1,25 +1,63 @@
 <!--<a routerLink="/SelectTeam" routerLinkActive="active">First Component</a>-->
 <div class="d-flex flex-column"> 
-  <div class="d-flex flex-row justify-content-around" style="background-color: aquamarine;"><!--Top Title-->
+  <div class="d-flex flex-row justify-content-around" style="background-color: rgb(132, 222, 192);"><!--Top Title-->
     <h5>AFL Australian football game</h5>
     <div>
       The Australian Football League (AFL) is set<br> 
       to undergo a rebrand, with a team of designers <br>
       reportedly set to develop a new logo for the league.
     </div>
-  </div>
-   
-   
+  </div> 
   
   <div class="text-center"> <!--Logo Image-->
     <img src="assets/AFL-Logo.jpg" width="250px" height="150px">
-  
   </div>
-  <nav>
-    <a routerLink = "/WinPrediction" class = "navButton">WinPrediction</a>
-       
-  </nav>
 
-  <app-select-team></app-select-team>
+
+  <div class="d-flex justify-content-center">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="btn btn-info btn-lg active" role="button" aria-pressed="true" href="/SelectTeam">First: SelectTeam</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/WinPrediction">Win Pridiction<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Team Results</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Team Fixure</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Team Venues</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Head-To-Head</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ladder</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Average Score</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Low/High Score</a>
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container border border-secondary rounded">
+    <h1 class="d-flex justify-content-center font-weight-lighter-bolder">Welcome to AFL Sport website</h1> <br><br>
+    <router-outlet></router-outlet>
+    <!--<app-select-team></app-select-team>-->
+  </div>
 </div> 
-<router-outlet></router-outlet>
+
+

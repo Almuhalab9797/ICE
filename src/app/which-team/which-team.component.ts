@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, SimpleChange, OnChanges } from '@angular/core';
+/*import { Component, OnInit, Input, SimpleChange, OnChanges } from '@angular/core';
 import { Team } from '../team';
 import {Game} from '../game';
 import { DataService } from '../data.service';
@@ -7,31 +7,35 @@ import { DataService } from '../data.service';
   selector: 'app-which-team',
   templateUrl: './which-team.component.html',
   styleUrls: ['./which-team.component.css']
+
 })
-export class WhichTeamComponent implements OnInit {
+
+export class WhichTeamComponent implements OnInit{
 
   games: Game[];
   @Input() team: Team;
+  teamSelected:Team;
   
-  constructor(private service: DataService) { }
+  constructor(private service: DataService) {}
 
-  ngOnChange(changes: SimpleChange){
+  ngOnChange(changes: SimpleChange):void {
     if(changes['team']){
+      console.log("sfg");
       this.getGames();
-      
     } 
   }
-  //onChoose(t: Team){}
 
   ngOnInit(): void {
     console.log("GG");
     this.getGames(); 
   }
 
+
   getGames(): void { 
     this.service.getGames().subscribe(temp => { 
       var tempArr=[];
 
+      console.log(this.team.id+"ojoj");
       temp.forEach(element => {
         if(element.hteamid == this.team.id || element.ateamid == this.team.id){
           tempArr.push(element);
@@ -40,5 +44,4 @@ export class WhichTeamComponent implements OnInit {
       this.games = tempArr;
     }); 
   } 
-
-}
+}*/

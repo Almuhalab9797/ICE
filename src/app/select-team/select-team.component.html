@@ -1,18 +1,14 @@
-<div class="container border border-secondary rounded">
-    <h1 class="d-flex justify-content-center font-weight-lighter-bolder">Choose your favourite team:</h1> <br><br>
-        
-    <figure class="figure" style="margin: 20px; padding: 10px;" *ngFor="let team of teams" (click)="onSelect(team)">
-        <img src= "https://squiggle.com.au/{{team.logo}}" class="figure-img img-fluid rounded"
-                alt="A generic square placeholder image with rounded corners in a figure." >
-        <figcaption class="figure-caption">{{team.name}}</figcaption>
-    </figure>
+
+<figure class="figure" style="margin: 20px; padding: 10px;" *ngFor="let team of teams" (click)="onSelect(team)">
+    <img src= "https://squiggle.com.au/{{team.logo}}" class="figure-img img-fluid rounded"
+            alt="A generic square placeholder image with rounded corners in a figure.">
+    <figcaption class="figure-caption">{{team.name|uppercase}}</figcaption>
+</figure>
+
+<!--<app-which-team [team] = "selectedTeam"></app-which-team>-->
+<!--<which-team [team] = "selectedTeam"></which-team>-->
 
 
-     
-    <app-which-team [team] = "selectedTeam"></app-which-team>
-</div>
-<!--<router-outlet></router-outlet>
 
-    <app-which-team [team] = "selectedTeam"></app-which-team>
-    <router-outlet></router-outlet>
-</div>-->
+
+

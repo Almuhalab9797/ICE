@@ -5,6 +5,7 @@ import {Game} from './game';
 import {Tip} from './tip';
 import {map} from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
+import { of } from 'rxjs'; // this is now correct 
 
 @Injectable({
   providedIn: 'root'
